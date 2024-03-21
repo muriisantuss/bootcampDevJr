@@ -3,13 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>BootCamp DevJr</title>
 
     <style>
+      *{
+        font-family: "Work Sans", sans-serif;
+      }
       .container {
         margin: 0 auto;
-        background-color: #b5dda4;
         width: 50%;
+        border-radius: 1rem;
+        overflow: hidden;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
       }
       header {
         padding: 1rem;
@@ -20,14 +32,31 @@
         padding: 1rem;
         background-color: #587d71;
       }
+      h1 {
+        color: #587d71;
+        font-weight: 700;
+      }
+      span{
+        color: #754668;
+        font-weight: 600;
+      }
     </style>
   </head>
   <body>
     <main class="container">
-      <header class="row">Primeira Linha</header>
+      <header class="row">
+        <h1>Entre para a nossa comunidade</h1>
+        <section>
+          <span>Faça a sua assinatura agora e ganhe 30% de desconto!</span>
+          <p>
+            Faça parte da nossa comunidade de desenvolvedores. <br />
+            Tenha suporte da nossa equipe e cresça mais rápido na sua carreira.
+          </p>
+        </section>
+      </header>
       <section class="flex">
-        <div>Coluna 1</div>
-        <div>Coluna 2</div>
+        <div>First Column</div>
+        <div>Second Column</div>
       </section>
     </main>
   </body>
