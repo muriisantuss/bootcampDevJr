@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
@@ -13,12 +13,13 @@
     <title>BootCamp DevJr</title>
 
     <style>
-      *{
+      * {
         font-family: "Work Sans", sans-serif;
       }
       .container {
         margin: 0 auto;
-        width: 50%;
+        max-width: 75%;
+        width: 32rem;
         border-radius: 1rem;
         overflow: hidden;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -26,19 +27,65 @@
       header {
         padding: 1rem;
       }
-      .flex {
-        display: flex;
-        justify-content: space-around;
-        padding: 1rem;
-        background-color: #587d71;
-      }
-      h1 {
+      header h1 {
         color: #587d71;
         font-weight: 700;
       }
-      span{
+      header span {
         color: #754668;
         font-weight: 600;
+      }
+      .flex {
+        display: flex;
+        justify-content: space-around;
+        color: white;
+      }
+      .columnOne {
+        width: 100%;
+        background-color: #587d71;
+        padding-bottom: 1rem;
+      }
+      h3 {
+        text-align: center;
+        margin-bottom: 0;
+        font-weight: 400;
+      }
+      .columnOne .price {
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin-bottom: 0;
+      }
+      .columnOne p {
+        font-size: 0.8rem;
+        margin: 0;
+        margin-bottom: 1rem;
+      }
+
+      .onBox span:nth-of-type(2) {
+        font-style: italic;
+        font-size: 0.8rem;
+        margin-bottom: 0;
+      }
+
+      .onBox {
+        padding: 1rem;
+      }
+      .onBox button {
+        width: 100%;
+        padding: 0.5rem 0;
+        border-radius: 1rem;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        font-weight: 700;
+        color: #587d71;
+      }
+      .onBox button:hover {
+        background-color: white;
+      }
+      .columnTwo {
+        width: 100%;
+        background-color: #754668;
       }
     </style>
   </head>
@@ -55,8 +102,16 @@
         </section>
       </header>
       <section class="flex">
-        <div>First Column</div>
-        <div>Second Column</div>
+        <article class="columnOne">
+          <h3>Assinatura Mensal:</h3>
+          <div class="onBox">
+            <span class="price">R$ 99,99</span>
+            <span>por mês</span>
+            <p>Cancele a qualquer momento</p>
+            <button>Assine Agora</button>
+          </div>
+        </article>
+        <div class="columnTwo"><h3>Second Column</h3></div>
       </section>
     </main>
   </body>
