@@ -15,6 +15,22 @@
     <style>
       * {
         font-family: "Work Sans", sans-serif;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-image: radial-gradient(
+          circle,
+          #eff3ff,
+          #ecedf7,
+          #e8e8ee,
+          #e3e3e6,
+          #dedede
+        );
       }
       .container {
         margin: 0 auto;
@@ -22,6 +38,7 @@
         width: 32rem;
         border-radius: 1rem;
         overflow: hidden;
+        background-color: white;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
       }
       header {
@@ -103,6 +120,22 @@
       .onBoxTwo span {
         width: 100%;
         font-size: 0.8rem;
+      }
+      @media screen and (max-width: 620px) {
+        .flex {
+          flex-direction: column;
+        }
+      }
+      @media screen and (max-width: 310px) {
+        h1 {
+          font-size: 1.5rem;
+        }
+        header section {
+          font-size: 0.9rem;
+        }
+        .columnTwo ul {
+          padding-left: 1rem;
+        }
       }
     </style>
   </head>
