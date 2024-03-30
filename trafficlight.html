@@ -3,15 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Traffic Light</title>
   </head>
   <body>
     <main id="container">
-      <section class="trafficlight">
-        <div class="img red-light"></div>
-        <div class="img yellow-light"></div>
-        <div class="img green-light"></div>
-      </section>
+      <div class="trafficlight">
+        <section class="panel">
+          <div class="light light-off red-light"></div>
+          <div class="light light-off yellow-light"></div>
+          <div class="light light-off green-light"></div>
+        </section>
+      </div>
+      <button>click me</button>
     </main>
   </body>
 </html>
