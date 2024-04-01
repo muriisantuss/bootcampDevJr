@@ -10,12 +10,13 @@
     <main id="container">
       <div class="trafficlight">
         <section class="panel">
-          <div class="light light-off red-light"></div>
-          <div class="light light-off yellow-light"></div>
-          <div class="light light-off green-light"></div>
+          <div id="red" class="light light-off"></div>
+          <div id="yellow" class="light light-off"></div>
+          <div id="green" class="light light-off"></div>
         </section>
       </div>
-      <button>click me</button>
+      <button id="btn" onclick="toggleColor()">click me</button>
     </main>
+    <script src="js.js"></script>
   </body>
 </html>
