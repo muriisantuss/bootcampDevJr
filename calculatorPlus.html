@@ -4,35 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>CalculatorPlus</title>
   </head>
   <body>
-    <header>
-      <h1>CalculatorPlus</h1>
-    </header>
     <main id="container">
       <section>
         <form id="calculator">
+          <header>
+            <object
+              data="/assets/iconCalculator.svg"
+              type="image/svg+xml"
+            ></object>
+            <h1>CalculatorPlus</h1>
+          </header>
           <label for="result">Result:</label>
           <input type="text" id="result" name="result" readonly />
 
-          <label for="input1">Número 1:</label>
+          <label for="input1">Number 1:</label>
           <input type="number" id="input1" name="input1" />
 
-          <label for="input2">Número 2:</label>
+          <label for="input2">Number 2:</label>
           <input type="number" id="input2" name="input2" />
           <div class="buttons">
-            <button type="button" onclick="calculate(1)">+</button>
-            <button type="button" onclick="calculate(2)">-</button>
-            <button type="button" onclick="calculate(3)">*</button>
-            <button type="button" onclick="calculate(4)">/</button>
+            <button type="button" onclick="calculate('+')">+</button>
+            <button type="button" onclick="calculate('-')">-</button>
+            <button type="button" onclick="calculate('*')">*</button>
+            <button type="button" onclick="calculate('/')">/</button>
           </div>
         </form>
       </section>
       <section id="history">
-        <h2>Histórico de Cálculos</h2>
+        <h2>History</h2>
+        <p>- Last 10 operations</p>
         <ul id="history-list">
-          <!-- Os cálculos serão adicionados aqui dinamicamente -->
+          <li></li>
+          <!-- Calculations will be added here dynamically -->
         </ul>
       </section>
     </main>
