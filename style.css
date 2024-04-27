@@ -1,0 +1,142 @@
+/* Global styles */
+* {
+  font-family: "Work Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: radial-gradient(
+    circle,
+    #eff3ff,
+    #ecedf7,
+    #e8e8ee,
+    #e3e3e6,
+    #dedede
+  );
+}
+
+/* Main container */
+.container {
+  margin: 0 auto;
+  max-width: 75%;
+  width: 32rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+/* Header styles */
+header {
+  padding: 1rem;
+}
+header h1 {
+  color: #587d71;
+  font-weight: 700;
+}
+header span {
+  color: #754668;
+  font-weight: 600;
+}
+
+/* Flex container */
+.flex {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+
+/* First column styles */
+.columnOne {
+  width: 100%;
+  background-color: #587d71;
+  padding-bottom: 1rem;
+}
+h3 {
+  text-align: center;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+.columnOne .price {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+.columnOne p {
+  font-size: 0.8rem;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.onBox span:nth-of-type(2) {
+  font-style: italic;
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
+
+.onBox {
+  padding: 1rem;
+}
+.onBox button {
+  width: 100%;
+  padding: 0.5rem 0;
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  color: #587d71;
+  background-color: white;
+}
+.onBox button:hover {
+  background-color: buttonface;
+}
+
+/* Second column styles */
+.columnTwo {
+  width: 100%;
+  background-color: #754668;
+}
+.columnTwo ul {
+  width: 100%;
+  font-size: 0.8rem;
+  padding-left: 2rem;
+}
+.columnTwo div:nth-child(1) {
+  text-align: center;
+  margin: 0;
+}
+
+.onBoxTwo {
+  padding: 1rem;
+  padding-top: 0;
+}
+.onBoxTwo span {
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+/* Media queries */
+@media screen and (max-width: 620px) {
+  .flex {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  header section {
+    font-size: 0.9rem;
+  }
+  .columnTwo ul {
+    padding-left: 1rem;
+  }
+}
