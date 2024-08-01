@@ -11,12 +11,16 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #1F1F1F;
 }
 .bodyEnquete{
   max-width: 35rem;
   padding: 2rem;
-  background-color: #1F0C22;
+  background: rgb(29,12,33);
+  background: linear-gradient(20deg, rgba(29,12,33,1) 0%, rgba(73,24,81,1) 50%, rgba(100,31,112,1) 100%);
   border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 article h1{
   font-size: 2rem;
@@ -32,7 +36,8 @@ article .texts{
   margin-top: 1rem;
   padding: 0rem 2rem 2rem 2rem;
   border-radius: 0.75rem;
-  background-color: #631E6F;
+  background: rgb(99,30,110);
+  background: linear-gradient(180deg, rgba(99,30,110,1) 0%, rgba(60,21,67,1) 35%, rgba(31,12,34,1) 100%);
 }
 .inputs{
   text-align: center;
@@ -47,6 +52,8 @@ article .texts{
   border-radius: 0.5rem;
   border: none;
   margin-bottom: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .aba-cards{
   display: flex;
@@ -64,6 +71,8 @@ article .texts{
   padding: 1rem;
   border-radius: 1rem;
   background-color: #3C5AEE;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .card img{
   width: 6dvi;
@@ -81,6 +90,8 @@ article .texts{
   border-radius: 0.3rem;
   border: 1rem;
   color: #FFF;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .card button:hover{
   background-color: #27102bd0;
