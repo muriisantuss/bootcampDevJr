@@ -47,6 +47,15 @@ constroem um portfólio sólido para entrar no mercado de trabalho de forma asse
 </p
 
   > **Tecnologias utilizadas:** **[HTML5](https://html.com/)**, **[CSS3](https://w3.org/Style/CSS/Overview.en.html).**
+> 
+##  **1stModule-chapterTwoEnquete**
+<p align="center">
+<img src="https://github.com/user-attachments/assets/1d640b53-add8-4cfe-a6a4-4070548922d3" alt="1stModule-chapterTwoEnquete" min-width="100px" max-width="500px" width="100%"/>
+
+
+</p
+
+  > **Tecnologias utilizadas:** **[HTML5](https://html.com/)**, **[CSS3](https://w3.org/Style/CSS/Overview.en.html).**
   
 ## **calculatorPlus**
 <p align="center">
